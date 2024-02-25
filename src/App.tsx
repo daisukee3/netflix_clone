@@ -1,13 +1,9 @@
 import React from 'react';
 import './App.css';
-// import dotenv from 'dotenv';
 import { Row } from './components/Row';
 import { requests } from './request';
 import { Banner } from './components/Banner';
 import { Nav } from './components/Nav';
-
-// dotenv.config();
-
 
 function App() {
   return (

@@ -1,5 +1,4 @@
-
-const API_KEY = "d35eb0f035c56531be16bd72014fdde8"; // .envを読み込む形に変える
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 export const requests ={
     feachTrending:`/trending/all/week?api_key=${API_KEY}&language=en-us`,
