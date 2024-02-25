@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import axios from "axios";
-import instance from "./axios";
+import axios from "./axios";
 import "./Row.scss";
 
 const base_url = "https://image.tmdb.org/t/p/original";
@@ -23,12 +22,11 @@ type Movie = {
 
 export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
   const [movies, setMovies] = useState<Movie[]>([]);
-  // console.log("test");
+
 
   useEffect(() => {
     async function fetchData() {
-      // const request = await axios.get(fetchUrl);
-      const request = await instance.get(fetchUrl);
+      const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
       return request;
     }

@@ -3,12 +3,14 @@ import './App.css';
 // import dotenv from 'dotenv';
 import { Row } from './Row';
 import { requests } from './request';
+import { Banner } from './Banner';
 // dotenv.config();
 
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <Row
       title="NETFLIX ORIGUINALS"
       fetchUrl={requests.feachNetflixOriginals}
