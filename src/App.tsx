@@ -4,12 +4,15 @@ import './App.css';
 import { Row } from './Row';
 import { requests } from './request';
 import { Banner } from './Banner';
+import { Nav } from './Nav';
+
 // dotenv.config();
 
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <Row
       title="NETFLIX ORIGUINALS"
